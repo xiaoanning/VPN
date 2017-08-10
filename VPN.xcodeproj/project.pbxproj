@@ -13,6 +13,7 @@
 		4D4FF07C1EDE67960011989E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FF07A1EDE67960011989E /* Main.storyboard */; };
 		4D4FF07E1EDE67960011989E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FF07D1EDE67960011989E /* Assets.xcassets */; };
 		4D4FF0811EDE67960011989E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4FF07F1EDE67960011989E /* LaunchScreen.storyboard */; };
+		4D4FF08B1EDE67D70011989E /* VPNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4FF08A1EDE67D70011989E /* VPNConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4D4FF07D1EDE67960011989E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D4FF0801EDE67960011989E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4FF0821EDE67960011989E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4FF0891EDE67D70011989E /* VPNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNConnection.h; sourceTree = "<group>"; };
+		4D4FF08A1EDE67D70011989E /* VPNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		4D4FF0701EDE67960011989E /* VPN */ = {
 			isa = PBXGroup;
 			children = (
+				4D4FF0881EDE67B50011989E /* Util */,
 				4D4FF0741EDE67960011989E /* AppDelegate.h */,
 				4D4FF0751EDE67960011989E /* AppDelegate.m */,
 				4D4FF0771EDE67960011989E /* ViewController.h */,
@@ -77,6 +81,15 @@
 				4D4FF0721EDE67960011989E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D4FF0881EDE67B50011989E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4D4FF0891EDE67D70011989E /* VPNConnection.h */,
+				4D4FF08A1EDE67D70011989E /* VPNConnection.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					4D4FF06D1EDE67960011989E = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8429SBRZW5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +166,7 @@
 			files = (
 				4D4FF0791EDE67960011989E /* ViewController.m in Sources */,
 				4D4FF0761EDE67960011989E /* AppDelegate.m in Sources */,
+				4D4FF08B1EDE67D70011989E /* VPNConnection.m in Sources */,
 				4D4FF0731EDE67960011989E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8429SBRZW5;
 				INFOPLIST_FILE = VPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.VPN;
@@ -283,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8429SBRZW5;
 				INFOPLIST_FILE = VPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.VPN;
